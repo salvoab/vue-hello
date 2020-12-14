@@ -4,14 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vue Hello</title>
+        <style>
+            img{
+                width: 500px;
+            }
+        </style>
     </head>
     <body>
         
         <div id="root">
-            <h1>{{titoloImmagine[indice]}}</h1>
+            <h1>{{titoliImmagini[indice]}}</h1>
             <button @click="nextIndex">Immagine successiva</button>
             <div>
-                <img :src="srcImage[indice]">
+                <img :src="srcImages[indice]">
             </div>
         </div>
 
